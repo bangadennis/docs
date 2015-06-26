@@ -1,0 +1,323 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>User guide &mdash; Supply Chain 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="top" title="Supply Chain 0.1 documentation" href="index.html" />
+    <link rel="prev" title="Project structure" href="Structure.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Structure.html" title="Project structure"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Supply Chain 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">User guide</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#getting-started">Getting started</a><ul>
+<li><a class="reference internal" href="#system-requirements">System requirements</a><ul>
+<li><a class="reference internal" href="#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#permissions">Permissions</a><ul>
+<li><a class="reference internal" href="#login-roles">Login roles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#launching-the-web-application">Launching the web application</a></li>
+<li><a class="reference internal" href="#application-layout">Application layout</a><ul>
+<li><a class="reference internal" href="#header">Header</a></li>
+<li><a class="reference internal" href="#side-bar">Side bar</a><ul>
+<li><a class="reference internal" href="#programs">Programs</a></li>
+<li><a class="reference internal" href="#classify-facilities">Classify facilities</a></li>
+<li><a class="reference internal" href="#organization-units">Organization units</a></li>
+<li><a class="reference internal" href="#reports">Reports</a></li>
+<li><a class="reference internal" href="#updates">Updates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tasks">Tasks</a><ul>
+<li><a class="reference internal" href="#get-report">Get report</a><ul>
+<li><a class="reference internal" href="#generating-a-supply-hierarchy-report">Generating a supply hierarchy report</a></li>
+<li><a class="reference internal" href="#generating-a-dataset-report">Generating a dataset report</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#download-report">Download report</a></li>
+<li><a class="reference internal" href="#id6">Classify facilities</a></li>
+<li><a class="reference internal" href="#creating-programmes">Creating programmes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trouble-shooting">Trouble shooting</a><ul>
+<li><a class="reference internal" href="#database-update">Database update</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Structure.html"
+                        title="previous chapter">Project structure</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Userguide.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="user-guide">
+<h1>User guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Managing supply chains in support of HIV/AIDS services is a formidable challenge, especially in developing countries. Expanding programs for HIV/AIDS, TB and malaria require strong and supportive laboratory services that depend on the availability of the required commodities to perform critical tests, with most tests requiring multiple commodities to be available simultaneously. A correctly designed and run distribution system should keep the commodities in good condition, rationalize storage points, use transport as efficiently as possible, reduce theft and fraud and provide information for forecasting needs. This requires a good management of the system along with a simple but well-designed information system in place.
+The purpose of this project is to establish an hierarchy of the drugs supply chain that is not captured in DHIS2 for purposes of analysis and report generation.</p>
+<p>As things stand, the Kenya instance of <a class="reference external" href="http://test.hiskenya.org/dhis-web-commons/security/login.action;jsessionid=720CD1B3E45168E4E27916FA020C6887">DHIS2</a> only establishes a hierarchy based on the country&#8217;s administrative units which while important, does not capture the supply chain hierarchy.
+The drug supply hierarchy needs to place facilities in their correct order clearly showing the reporting chain ie what facilities report to what and what facilities are children so to speak of what facilities.</p>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of this application is to establish an hierarchy of the drugs supply chain that is not captured in DHIS2 for purposes of analysis and report generation.</p>
+<div class="section" id="system-requirements">
+<h3>System requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h3>
+<p>Chrome browser is recommended for the application. This is because of the javascript that is used in the app.
+Its able to load faster in chrome.</p>
+<p>Login roles to DHIS2 are also required inorder to access the application.</p>
+<div class="section" id="logging-in">
+<h4>Logging in<a class="headerlink" href="#logging-in" title="Permalink to this headline">¶</a></h4>
+<p>You have to login to <a class="reference external" href="http://test.hiskenya.org/dhis-web-commons/security/login.action;jsessionid=720CD1B3E45168E4E27916FA020C6887">DHIS2</a> first:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;username&quot;</span><span class="o">:</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;password&quot;</span><span class="o">:</span> <span class="s2">&quot;password&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please note that you must have signed up in DHIS2.</p>
+</div>
+<p>Secondly, you must login to the application itself. Here is the login page:</p>
+<div class="figure">
+<img alt="_images/homepage.png" src="_images/homepage.png" />
+</div>
+<p>A successful login will lead you to using the application.</p>
+</div>
+</div>
+<div class="section" id="permissions">
+<h3>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="login-roles">
+<h4>Login roles<a class="headerlink" href="#login-roles" title="Permalink to this headline">¶</a></h4>
+<p>There are various user roles according to the user who is logged in.</p>
+<dl class="docutils">
+<dt>Users can either:</dt>
+<dd><ol class="first last arabic simple">
+<li>View/generate reports.</li>
+<li>Categorise or group facilities according to their hierarchies.</li>
+</ol>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="section" id="launching-the-web-application">
+<h2>Launching the web application<a class="headerlink" href="#launching-the-web-application" title="Permalink to this headline">¶</a></h2>
+<p>This application is launched as a stand alone app, because it is not incorporated in DHIS2.</p>
+<p>However, it pulls data from DHIS2.</p>
+<p>In order to launch the app, you need to type the <a class="reference external" href="urlhere">url</a></p>
+<p>This will direct you to the login page where you can login.</p>
+</div>
+<div class="section" id="application-layout">
+<h2>Application layout<a class="headerlink" href="#application-layout" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="header">
+<h3>Header<a class="headerlink" href="#header" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="side-bar">
+<h3>Side bar<a class="headerlink" href="#side-bar" title="Permalink to this headline">¶</a></h3>
+<p>At the rightside bar, there is a list of links:</p>
+<div class="section" id="programs">
+<h4>Programs<a class="headerlink" href="#programs" title="Permalink to this headline">¶</a></h4>
+<p>Here you can create and manage programs.</p>
+</div>
+<div class="section" id="classify-facilities">
+<h4>Classify facilities<a class="headerlink" href="#classify-facilities" title="Permalink to this headline">¶</a></h4>
+<p>Here you can classify facilities according to the hierarchy, either as central stores, satellite sites or stand alone sites.</p>
+<p>Go to <a class="reference external" href="urlhere">Classify facilities</a> ,click on the facility type to classify, then select the facilities to put under the classification.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This establishes a hierarchy of the supply chain for report generation.</p>
+</div>
+</div>
+<div class="section" id="organization-units">
+<h4>Organization units<a class="headerlink" href="#organization-units" title="Permalink to this headline">¶</a></h4>
+<p>This link is used to narrow down to low level units.</p>
+<p>Click on <a class="reference external" href="urlhere">Organization units</a> ,then click on an organization unit to get the list of facilities under it.</p>
+<blockquote>
+<div></div></blockquote>
+</div>
+<div class="section" id="reports">
+<h4>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h4>
+<p>Use the <a class="reference external" href="urlhere">Reports</a> link to query for various reports.</p>
+</div>
+<div class="section" id="updates">
+<h4>Updates<a class="headerlink" href="#updates" title="Permalink to this headline">¶</a></h4>
+<p>There is need to query DHIS2 for newly updated organization units.</p>
+<p>Use <a class="reference external" href="urlhere">Updates</a> to update the systems database from the DHIS2&#8217;s web API.</p>
+<p>Updates fetch new organization units or facilities that may have been added.</p>
+<blockquote>
+<div></div></blockquote>
+<p>Here is a screenshot of the application layout</p>
+<div class="figure">
+<img alt="_images/layout.png" src="_images/layout.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tasks">
+<h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-report">
+<h3>Get report<a class="headerlink" href="#get-report" title="Permalink to this headline">¶</a></h3>
+<p>Here you can either get supply hierarchy reports or dataset reports.</p>
+<div class="section" id="generating-a-supply-hierarchy-report">
+<h4>Generating a supply hierarchy report<a class="headerlink" href="#generating-a-supply-hierarchy-report" title="Permalink to this headline">¶</a></h4>
+<div class="figure">
+<img alt="_images/report.png" src="_images/report.png" />
+</div>
+</div>
+<div class="section" id="generating-a-dataset-report">
+<h4>Generating a dataset report<a class="headerlink" href="#generating-a-dataset-report" title="Permalink to this headline">¶</a></h4>
+<div class="figure">
+<img alt="_images/datasetreport.png" src="_images/datasetreport.png" />
+</div>
+</div>
+</div>
+<div class="section" id="download-report">
+<h3>Download report<a class="headerlink" href="#download-report" title="Permalink to this headline">¶</a></h3>
+<p>Using the link, you can download reports in PDF format.</p>
+<div class="figure">
+<img alt="download.png" src="download.png" />
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Classify facilities<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>This is the classification of facilities according to the facility type chosen, either central store, a satellite site, or a stand alone site.</p>
+<p>Central store classification</p>
+<div class="figure">
+<img alt="_images/centralsite.png" src="_images/centralsite.png" />
+</div>
+<p>Satellite classification</p>
+<div class="figure">
+<img alt="_images/satellite.png" src="_images/satellite.png" />
+</div>
+<p>Stand alone classification</p>
+<div class="figure">
+<img alt="_images/standalone.png" src="_images/standalone.png" />
+</div>
+</div>
+<div class="section" id="creating-programmes">
+<h3>Creating programmes<a class="headerlink" href="#creating-programmes" title="Permalink to this headline">¶</a></h3>
+<p>This is basically adding a new program and assigning it to a facility.</p>
+<div class="figure">
+<img alt="_images/program.png" src="_images/program.png" />
+</div>
+</div>
+</div>
+<div class="section" id="trouble-shooting">
+<h2>Trouble shooting<a class="headerlink" href="#trouble-shooting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="database-update">
+<h3>Database update<a class="headerlink" href="#database-update" title="Permalink to this headline">¶</a></h3>
+<p>This involves updating the systems database from the DHIS2 web API inorder to fetch new organization units and facilities that may have been added.</p>
+<div class="figure">
+<img alt="_images/facilityupdate.png" src="_images/facilityupdate.png" />
+</div>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Structure.html" title="Project structure"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Supply Chain 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, sci devs.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>
