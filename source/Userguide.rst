@@ -204,6 +204,7 @@ The user with the role 'Read' can only view the reports link on the leftside bar
 
 Here is the app layout as viewed by the 'Read' user:
 
+
 .. figure:: images/read.png
 
 
@@ -327,18 +328,21 @@ Update of central site data
 
 .. figure:: images/post.png
 
+
+
 Other procedures
 ----------------
 
 
-Get report
+Get reports
 ~~~~~~~~~~~
-Here you can either get supply hierarchy reports or dataset reports.
+Apart from generating aggregated data for satellite sites (dataset reports),one can also get reports on 
+programs and supply chain hierarchy.
 
 Generating a supply hierarchy report
 ++++++++++++++++++++++++++++++++++++
 
-.. figure:: images/report.png
+.. figure:: images/supply.png
 .. :align:center
 
 
@@ -347,64 +351,64 @@ Generating a supply hierarchy report
 
 
 
-Generating a dataset report
+Generating a program report
 +++++++++++++++++++++++++++++
 
-.. figure:: images/datasetreport.png
+.. figure:: images/programme.png
 
 
 
 
 
 
-Download report
-~~~~~~~~~~~~~~~
-Using the link, you can download reports in PDF format.
+.. Download report
+.. ~~~~~~~~~~~~~~~
+.. Using the link, you can download reports in PDF format.
 
-.. figure:: download.png
-
-
-
-
-
-Classify facilities
-~~~~~~~~~~~~~~~~~~~
-This is the classification of facilities according to the facility type chosen, either central store, a satellite site, or a stand alone site. 
-
-
-Central store classification
-
-
-.. figure:: images/centralsite.png
+.. .. figure:: download.png
 
 
 
 
 
-
-Satellite classification
-
-.. figure:: images/satellite.png
-
+.. Classify facilities
+.. ~~~~~~~~~~~~~~~~~~~
+.. This is the classification of facilities according to the facility type chosen, either central store, a satellite site, or a stand alone site. 
 
 
+.. Central store classification
 
 
-Stand alone classification
-
-.. figure:: images/standalone.png
+.. .. figure:: images/centralsite.png
 
 
 
 
 
-Creating programmes
-~~~~~~~~~~~~~~~~~~~
-This is basically adding a new program and assigning it to a facility.
+
+.. Satellite classification
+
+.. .. figure:: images/satellite.png
 
 
 
-.. figure:: images/program.png
+
+
+.. Stand alone classification
+
+.. .. figure:: images/standalone.png
+
+
+
+
+
+.. Creating programmes
+.. ~~~~~~~~~~~~~~~~~~~
+.. This is basically adding a new program and assigning it to a facility.
+
+
+
+.. .. figure:: images/program.png
 
 
 
@@ -412,13 +416,22 @@ This is basically adding a new program and assigning it to a facility.
 Trouble shooting
 -----------------
 
-Database update
-~~~~~~~~~~~~~~~
+.. Database update
+.. ~~~~~~~~~~~~~~~
 
-This involves updating the systems database from the DHIS2 web API inorder to fetch new organization units and facilities that may have been added.
+.. This involves updating the systems database from the DHIS2 web API inorder to fetch new organization units and facilities that may have been added.
 
 
-.. figure:: images/facilityupdate.png
+.. .. figure:: images/facilityupdate.png
+
+
+Restore of deleted data
+~~~~~~~~~~~~~~~~~~~~~~~
+
+One can retore deleted data by clicking on the administration link on the leftside bar of the app.
+
+.. figure:: images/restore.png
+
 
 .. toctree::
     :maxdepth: 2

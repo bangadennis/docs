@@ -99,7 +99,7 @@
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
 <p>The purpose of this project is to establish an hierarchy of the drugs supply chain
 that is not captured in DHIS2 for purposes of analysis and report generation.</p>
-<p>As things stand, the Kenya instance of DHIS2 only establishes a hierarchy based on
+<p>As things stand, the Kenya instance of <a class="reference external" href="http://test.hiskenya.org/dhis-web-commons/security/login.action;jsessionid=720CD1B3E45168E4E27916FA020C6887">DHIS2</a> only establishes a hierarchy based on
 the countries administrative units which while important, does not capture the
 supply chain hierarchy.</p>
 <p>The drug supply hierarchy needs to place facilities in their correct order clearly
@@ -107,31 +107,47 @@ showing the reporting chain ie what facilities report to what and what facilitie
 are children so to speak of what facilities.</p>
 <div class="section" id="facility-types">
 <h2>Facility types<a class="headerlink" href="#facility-types" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>Four types of facilities used of drugs supply exist:</dt>
-<dd><ol class="first last arabic simple">
+<p>For ART-related medicines, the health facilities are categorized into five (5) types:</p>
+<blockquote>
+<div><ol class="arabic simple">
 <li>Central stores</li>
 <li>Central store dispensing points</li>
 <li>Satellite stores</li>
 <li>Stand alone sites</li>
+<li>Sub-County stores (formerly the district stores)</li>
 </ol>
-</dd>
-</dl>
+</div></blockquote>
+<p>For Nutrition &amp; HIV commodities, the health facilities are categorized into four (4) types:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Central sites</li>
+<li>Central site Dispensing points</li>
+<li>Satellite sites</li>
+<li>Standalone sites</li>
+</ol>
+</div></blockquote>
 </div>
 <div class="section" id="the-reporting-hierachy">
 <h2>The reporting hierachy<a class="headerlink" href="#the-reporting-hierachy" title="Permalink to this headline">¶</a></h2>
-<p><em>Central Stores</em> are at the top and own (in the reporting hierarchy) the central store
-dispensing points and the satellite stores.</p>
-<p><em>Central store dispensing points</em> are central points that act as dispensing points
-which means in essence, it is the same facility but acts as both a central store and
-a dispensing point.</p>
-<p><em>Satellite stores</em> are facilities that report to the central stores.</p>
-<p><em>Stand alone sites</em> as the name suggests do not have any affiliation in the reporting
-hierarchy.</p>
-<p>Existing facilities (Level 4) are used as stores for the purpose of drug dispensing.
-These facilities are captures in DHIS2 as Level 4 Organization Units and thus no
-hierarchy exists between them.</p>
+<p>The Standalone sites, Sub-county Stores and the Central sites form the <strong>ORDERING POINTS</strong>. These Ordering points are supplied by the national/central level stores, e.g. <a class="reference external" href="http://www.kemsa.co.ke/">KEMSA</a>. An Ordering point is defined as a designated Central site, Standalone site or a Sub-county store that orders ARV and OI commodities from the allocated commodity pipeline, e.g. <a class="reference external" href="http://www.kemsa.co.ke/">KEMSA</a>, <a class="reference external" href="https://www.fbo.gov/index?s=opportunity&amp;mode=form&amp;id=7ff3aa1c240558fcfe5cfc118e1bddbf&amp;tab=core&amp;_cview=1">NHPplus</a>. Usually these are higher level facilities, e.g. hospitals.</p>
+<p>A <strong>Central site</strong> is defined as a facility that provides ART/Nutrition services and also supplies lower level sites (Satellite sites) with ART-related medicines &amp; nutrition commodities.</p>
+<p>As an Ordering point, Central sites own (in the reporting hierarchy) the Central site Dispensing points and the Satellite sites.</p>
+<p>A <strong>Central site Dispensing point</strong> is the Central site itself reporting for its own commodity stock and usage (without that of the Satellite sites), as a service delivery point.</p>
+<p><strong>Satellite sites</strong> are health facilities that report to the Central stores, i.e. that are health facilities providing ART/Nutrition &amp; HIV services, that are supplied with commodities by a Central site or Sub-county store.</p>
+<p>Usually these are lower level health facilities, e.g. health centres, dispensaries.</p>
+<p>A <strong>Sub-county store</strong> is defined as a facility that DOES NOT provide ART/Nutrition &amp; HIV services but supplies lower level sites (Satellite sites) with ART-related medicines and Nutrition &amp; HIV commodities.</p>
+<p>A <strong>Standalone site</strong>, as the name suggests, do not have any affiliation in the reporting hierarchy, i.e. they are facilities that provide ART/Nutrition &amp; HIV services but DO NOT supply any lower level sites (Satellite sites).</p>
+<p>Existing facilities (Level 4) are used as stores for the purpose of drug dispensing.</p>
+<p>These facilities are captures in DHIS2 as Level 4 Organization Units and thus no hierarchy exists between them.</p>
 <p>The purpose of this project is to establish that hierarchy.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li><a class="reference external" href="http://nascop.or.ke/">NASCOP</a> maintains the list of approved Central, Satellite and Standalone sites, and Sub-County stores.</li>
+<li>Each Central site and Sub-county store has a defined list of Satellite sites.</li>
+<li>No Satellite site should report or receive stocks from more than one (1) Central site or Sub-county store.</li>
+</ul>
+</div>
 <div class="toctree-wrapper compound">
 <ul class="simple">
 </ul>
