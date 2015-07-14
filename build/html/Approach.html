@@ -96,7 +96,7 @@
             
   <div class="section" id="approach">
 <h1>Approach<a class="headerlink" href="#approach" title="Permalink to this headline">¶</a></h1>
-<p>The project is developed as a DHIS2 Web APP.</p>
+<p>The project is developed as a DHIS2 Data Aggregation WebApp that would run on an independent instance and maintain its own local database, but have the ability to read and write to DHIS2.</p>
 <div class="section" id="the-web-api-and-the-database">
 <h2>The web API and the database<a class="headerlink" href="#the-web-api-and-the-database" title="Permalink to this headline">¶</a></h2>
 <p>The Web API is used to a great deal as a source of data for the backborne database
@@ -109,7 +109,11 @@ user who is prompted to supply facilities under each category from the list we h
 <p>The purpose of incorporating the existing DHIS2 hierarchy of counties and sub-
 counties is to aid the user in the search and selection process by providing a
 mechanism in which they can drill down to a smaller number of facilities as opposed
-to being presented with all the facilities at once.</p>
+to being presented with all the facilities at once e.g</p>
+<ul class="simple">
+<li>the user should be able to generate a combined report (MoH730A or MoH729A) for the Sub-county store and its Satellite sites.</li>
+<li>the user should also be able to group Standalone sites by county or sub-county (or Central sites or Sub-county stores).</li>
+</ul>
 <p>Once the Central stores, dispensing points, satellite sites and stand alone sites
 are established and inserted into the database, DHIS2 Web API is queried for
 analytics based on the hierarchy established and the results displayed.</p>

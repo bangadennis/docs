@@ -1,7 +1,7 @@
 Approach
 ============================
 
-The project is developed as a DHIS2 Web APP.
+The project is developed as a DHIS2 Data Aggregation WebApp that would run on an independent instance and maintain its own local database, but have the ability to read and write to DHIS2.
 
 
 The web API and the database
@@ -19,7 +19,14 @@ user who is prompted to supply facilities under each category from the list we h
 The purpose of incorporating the existing DHIS2 hierarchy of counties and sub-
 counties is to aid the user in the search and selection process by providing a
 mechanism in which they can drill down to a smaller number of facilities as opposed
-to being presented with all the facilities at once.
+to being presented with all the facilities at once e.g 
+
+* the user should be able to generate a combined report (MoH730A or MoH729A) for the Sub-county store and its Satellite sites.
+
+
+
+* the user should also be able to group Standalone sites by county or sub-county (or Central sites or Sub-county stores). 
+
 
 Once the Central stores, dispensing points, satellite sites and stand alone sites
 are established and inserted into the database, DHIS2 Web API is queried for 

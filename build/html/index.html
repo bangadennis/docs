@@ -90,11 +90,11 @@
   <div class="section" id="dhis2-supply-chain-hierarchy-project-documentation">
 <h1>DHIS2 supply chain hierarchy project documentation<a class="headerlink" href="#dhis2-supply-chain-hierarchy-project-documentation" title="Permalink to this headline">¶</a></h1>
 <p>This is documentation for the hierarchy of the drugs supply chain that is not captured in DHIS2 for purposes of analysis and report generation.</p>
-<p>There is a <a class="reference internal" href="#downloadable-pdf-version">downloadable PDF version</a> of this documentation, a
+<p>There is a <a class="reference external" href="https://media.readthedocs.org/pdf/supply-chain-hierarchy-project/latest/supply-chain-hierarchy-project.pdf">downloadable PDF version</a> of this documentation, a
 <a class="reference internal" href="#mobile-friendly-epub-version">mobile friendly EPUB version</a> and a <a class="reference internal" href="#downloadable-html-version">downloadable HTML version</a>.</p>
 </div>
 <div class="section" id="table-of-contents">
-<span id="downloadable-html-version"></span><span id="mobile-friendly-epub-version"></span><span id="downloadable-pdf-version"></span><h1>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<span id="downloadable-html-version"></span><span id="mobile-friendly-epub-version"></span><h1>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a><ul>
@@ -113,7 +113,7 @@
 <li class="toctree-l1"><a class="reference internal" href="03_development.html">Development tools</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#msql-database">MSQL database</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#php-and-apache2-for-the-server-side">PHP and Apache2 for the server side</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_development.html#javascript-ajax-jquery">JavaScript, AJAX, jQuery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_development.html#javascript-ajax-jquery-for-dhis2-web-api-querying">JavaScript, AJAX, jQuery for DHIS2 Web API querying</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#html5-bootstrap-font-awesome-javascript-jquery-for-user-interface">HTML5, Bootstrap, Font-Awesome, JavaScript, jQuery for user interface</a><ul class="simple">
 </ul>
 </li>
@@ -144,23 +144,32 @@
 <li class="toctree-l2"><a class="reference internal" href="Userguide.html#application-layout">Application layout</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#header">Header</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#side-bar">Side bar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Userguide.html#users">Users</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Userguide.html#programs">Programs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Userguide.html#classify-facilities">Classify facilities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Userguide.html#organization-units">Organization units</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Userguide.html#reports">Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Userguide.html#classify">Classify</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Userguide.html#updates">Updates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Userguide.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Userguide.html#reports">Reports</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Userguide.html#tasks">Tasks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Userguide.html#assigning-a-dataset-to-organization-units">Assigning a dataset to organization units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Userguide.html#accessing-the-data-entry-form">Accessing the data entry form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Userguide.html#entering-data-for-satellite-sites">Entering data for satellite sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Userguide.html#collection-of-aggregation-data-for-the-satellite-sites">Collection of aggregation data for the satellite sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Userguide.html#update-of-central-site-data">Update of central site data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Userguide.html#other-procedures">Other procedures</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#get-report">Get report</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Userguide.html#generating-a-supply-hierarchy-report">Generating a supply hierarchy report</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Userguide.html#generating-a-dataset-report">Generating a dataset report</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#download-report">Download report</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Userguide.html#id6">Classify facilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Userguide.html#classify-facilities">Classify facilities</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#creating-programmes">Creating programmes</a></li>
 </ul>
 </li>

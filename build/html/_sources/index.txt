@@ -10,7 +10,7 @@ This is documentation for the hierarchy of the drugs supply chain that is not ca
 There is a `downloadable PDF version`_ of this documentation, a
 `mobile friendly EPUB version`_ and a `downloadable HTML version`_.
 
-.. _`downloadable PDF version`: 
+.. _`downloadable PDF version`: https://media.readthedocs.org/pdf/supply-chain-hierarchy-project/latest/supply-chain-hierarchy-project.pdf 
 .. _`mobile friendly EPUB version`: 
 .. _`downloadable HTML version`: 
 
