@@ -87,7 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="03_development.html">Development tools</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#msql-database">MSQL database</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#php-and-apache2-for-the-server-side">PHP and Apache2 for the server side</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_development.html#javascript-ajax-jquery-for-dhis2-web-api-querying">JavaScript, AJAX, jQuery for DHIS2 Web API querying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_development.html#javascript-ajax-jquery-php-curl-for-dhis2-web-api-querying">JavaScript, AJAX, jQuery,PHP CURL for DHIS2 Web API querying</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#html5-bootstrap-font-awesome-javascript-jquery-for-user-interface">HTML5, Bootstrap, Font-Awesome, JavaScript, jQuery for user interface</a><ul class="simple">
 </ul>
 </li>
@@ -96,7 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Structure.html">Project structure</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Structure.html#assets">Assets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Structure.html#client">Client</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Structure.html#db">db</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="Structure.html#db">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Structure.html#system">System</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -132,7 +133,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#assigning-a-dataset-to-organization-units">Assigning a dataset to organization units</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#accessing-the-data-entry-form">Accessing the data entry form</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#entering-data-for-satellite-sites">Entering data for satellite sites</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#collection-of-aggregation-data-for-the-satellite-sites">Collection of aggregation data for the satellite sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-of-aggregated-data-for-the-satellite-sites">Collection of aggregated data for the satellite sites</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#update-of-central-site-data">Update of central site data</a></li>
 </ul>
 </li>
@@ -272,14 +273,84 @@ Its able to load faster in chrome.</p>
 <div class="section" id="users">
 <h4>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h4>
 <p>Here, the admin can create and manage different types of users.</p>
+<ul class="simple">
+<li>Go to the users tab at the leftside bar of the app.</li>
+<li>Click on &#8216;create&#8217; to create a new user. Fill in details in the form that appears on the page and save.</li>
+</ul>
+<div class="figure">
+<img alt="_images/users.png" src="_images/users.png" />
+</div>
+<ul class="simple">
+<li>You can also add a new user from DHIS2 by clicking on &#8216;add form DHIS2&#8217; in the dropdown list.</li>
+<li>To edit the roles of a user, click on the &#8216;edit&#8217; in the dropdown. In the window that appears, click on edit at the each user in order to edit.</li>
+</ul>
+<div class="figure">
+<img alt="_images/edit.png" src="_images/edit.png" />
+</div>
+<ul class="simple">
+<li>You can also click on the &#8216;administration&#8217; to deactivate an account or update the details of a user.</li>
+</ul>
+<div class="figure">
+<img alt="_images/admini.png" src="_images/admini.png" />
+</div>
 </div>
 <div class="section" id="programs">
 <h4>Programs<a class="headerlink" href="#programs" title="Permalink to this headline">¶</a></h4>
 <p>Here, you can create and manage programs.</p>
+<ol class="arabic simple">
+<li>Click on the programs tab on the leftside bar, on the dropdown that appears, click on the &#8216;create&#8217; to create a new program.</li>
+<li>On the window that appears, fill in the details of the program you want to create i.e the program name and the datasets for the program.</li>
+</ol>
+<div class="figure">
+<img alt="_images/create.png" src="_images/create.png" />
+</div>
+<p>You can also click on the &#8216;edit&#8217; in the dropdown to change the details of a program or &#8216;administration&#8217; to delete a certain program.</p>
 </div>
 <div class="section" id="classify">
 <h4>Classify<a class="headerlink" href="#classify" title="Permalink to this headline">¶</a></h4>
 <p>Here you can classify facilities according to the hierarchy, either as sub-county stores, central stores, satellite sites or stand alone sites.</p>
+<ol class="arabic simple">
+<li>Click on the classify tab on the leftside bar, on the dropdown that appears, select either sub-county stores,central sites, satellite sites or stand alones.</li>
+<li>Once you click &#8216;sub-county stores&#8217;, a new window will be loaded containing a form where you will;<ul>
+<li>Select the program you want to classify and submit.</li>
+<li>Select the sub-county stores that the program will be attributed to and submit.</li>
+</ul>
+</li>
+</ol>
+<div class="figure">
+<img alt="_images/subcounty.png" src="_images/subcounty.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li>When you select the &#8216;central site&#8217; from the dropdown;<ul>
+<li>select the program you want to classify and submit.</li>
+<li>Below that, select the central store you want the program to be attributed to and then submit.</li>
+</ul>
+</li>
+</ol>
+<div class="figure">
+<img alt="_images/central.png" src="_images/central.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li>When you select the &#8216;satellite site&#8217; from the dropdown;<ul>
+<li>Here, you can either classify the satellite as a sub-county store satellite or a central site satellite. Just click on any of the links according to the classification you want.</li>
+</ul>
+</li>
+</ol>
+<p>For example, if you select the sub-county store satellite link,</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li>Select the program you want to classify and click submit.</li>
+<li>Below it, select the sub-county store (the parent to the satellite site) and submit.</li>
+<li>Below that, select the satellite sites that will have the sub-county store selected above as their parent and then submit.</li>
+</ul>
+</div></blockquote>
+<div class="figure">
+<img alt="_images/satellites.png" src="_images/satellites.png" />
+</div>
+</div></blockquote>
+<p>The same procedure applies when you select the central site satellite link.</p>
+<p>In the dropdown, when you click on  &#8216;Stand Alones&#8217;, you will just follow the same procedure for classification.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This establishes a hierarchy of the supply chain for report generation.</p>
@@ -288,10 +359,15 @@ Its able to load faster in chrome.</p>
 <div class="section" id="updates">
 <h4>Updates<a class="headerlink" href="#updates" title="Permalink to this headline">¶</a></h4>
 <p>There is need to query DHIS2 for newly updated organization units, facilities and datasets.</p>
-<p>Use <a class="reference external" href="urlhere">Updates</a> to update the systems database from the DHIS2&#8217;s web API.</p>
-<p>Updates fetch new organization units,facilities and datasets that may have been added.</p>
 <blockquote>
-<div></div></blockquote>
+<div><ol class="arabic simple">
+<li>click on the &#8216;updates&#8217; link in the leftside bar of the application.</li>
+<li>From the dropdown that appears below the link, select either counties,sub-counties, facilities or datasets inorder to update them respectively.</li>
+</ol>
+</div></blockquote>
+<div class="figure">
+<img alt="_images/update.png" src="_images/update.png" />
+</div>
 </div>
 <div class="section" id="administration">
 <h4>Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h4>
@@ -322,6 +398,7 @@ Its able to load faster in chrome.</p>
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="assigning-a-dataset-to-organization-units">
 <h3>Assigning a dataset to organization units<a class="headerlink" href="#assigning-a-dataset-to-organization-units" title="Permalink to this headline">¶</a></h3>
+<p>This is done in the <a class="reference external" href="http://test.hiskenya.org/dhis-web-commons/security/login.action;jsessionid=720CD1B3E45168E4E27916FA020C6887">DHIS2</a> test site.</p>
 <blockquote>
 <div><ol class="arabic">
 <li><p class="first">In <a class="reference external" href="http://test.hiskenya.org/dhis-web-commons/security/login.action;jsessionid=720CD1B3E45168E4E27916FA020C6887">DHIS2</a> apps, select the data sets app.</p>
@@ -387,8 +464,8 @@ Its able to load faster in chrome.</p>
 </div>
 </div></blockquote>
 </div>
-<div class="section" id="collection-of-aggregation-data-for-the-satellite-sites">
-<h3>Collection of aggregation data for the satellite sites<a class="headerlink" href="#collection-of-aggregation-data-for-the-satellite-sites" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="collection-of-aggregated-data-for-the-satellite-sites">
+<h3>Collection of aggregated data for the satellite sites<a class="headerlink" href="#collection-of-aggregated-data-for-the-satellite-sites" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>In the app (Supply Pipeline Hierarchy Tool), on the leftside bar, click on the Reports tab. You will see a dropdown appear below the tab.</li>
 <li>Click on the Datasets report, this will direct you to another page where you will have to select;<ul>
@@ -433,12 +510,23 @@ Its able to load faster in chrome.</p>
 programs and supply chain hierarchy.</p>
 <div class="section" id="generating-a-supply-hierarchy-report">
 <h4>Generating a supply hierarchy report<a class="headerlink" href="#generating-a-supply-hierarchy-report" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>From the leftside bar of the application, click on the reports link.</li>
+<li>From the dropdown that appears below it, select Supply Hierarchy.</li>
+<li>A window will loaded displaying a program and the various site classifications.</li>
+</ol>
 <div class="figure">
 <img alt="_images/supply.png" src="_images/supply.png" />
 </div>
 </div>
 <div class="section" id="generating-a-program-report">
 <h4>Generating a program report<a class="headerlink" href="#generating-a-program-report" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>From the leftside bar of the application, click on the reports link.</li>
+<li>From the dropdown that appears below it, select &#8216;Program&#8217;.</li>
+<li>A window will be loaded showing programs and the different types of sites which the progrm is assigned to(sub-county stores, central sites, satellite sites, and stand alone sites).</li>
+</ol>
+<p>You will also be able to see the various datasets that are assigned to a certain program(s).</p>
 <div class="figure">
 <img alt="_images/programme.png" src="_images/programme.png" />
 </div>
@@ -449,7 +537,17 @@ programs and supply chain hierarchy.</p>
 <h2>Trouble shooting<a class="headerlink" href="#trouble-shooting" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="restore-of-deleted-data">
 <h3>Restore of deleted data<a class="headerlink" href="#restore-of-deleted-data" title="Permalink to this headline">¶</a></h3>
-<p>One can retore deleted data by clicking on the administration link on the leftside bar of the app.</p>
+<p>One can retore deleted data by:</p>
+<ol class="arabic simple">
+<li>Click on the administration link on the leftside bar of the app.</li>
+<li>A dropdown will appear, click on the first option i.e Supply Hierarchy inorder to delete a supply hierarchy.</li>
+<li>Click on the second option inorder to restore deleted data.</li>
+</ol>
+<p>A window will be loaded showing all the deleted data.</p>
+<ol class="arabic simple">
+<li>If you want to retrieve the data, click on the restore button at the end of the specific row.</li>
+<li>If you want to delete permanently, click on the &#8216;delete permanently&#8217; button at the end of the row.</li>
+</ol>
 <div class="figure">
 <img alt="_images/restore.png" src="_images/restore.png" />
 </div>

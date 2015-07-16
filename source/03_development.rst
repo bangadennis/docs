@@ -19,9 +19,10 @@ side logic.
 
 No PHP framework is used.
 
-JavaScript, AJAX, jQuery for DHIS2 Web API querying
-----------------------------------------------------
-To query the JSON API for data, JavaScript and jQuery were used.
+JavaScript, AJAX, jQuery,PHP CURL for DHIS2 Web API querying
+-------------------------------------------------------------
+
+To query the JSON API for data, JavaScript and jQuery and PHP CURL were used.
 
 AJAX asynchronous POST was used to send data to the PHP scripts to commit
 to the database.

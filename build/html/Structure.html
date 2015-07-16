@@ -88,7 +88,7 @@
 <li class="toctree-l1"><a class="reference internal" href="03_development.html">Development tools</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#msql-database">MSQL database</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#php-and-apache2-for-the-server-side">PHP and Apache2 for the server side</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_development.html#javascript-ajax-jquery-for-dhis2-web-api-querying">JavaScript, AJAX, jQuery for DHIS2 Web API querying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_development.html#javascript-ajax-jquery-php-curl-for-dhis2-web-api-querying">JavaScript, AJAX, jQuery,PHP CURL for DHIS2 Web API querying</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_development.html#html5-bootstrap-font-awesome-javascript-jquery-for-user-interface">HTML5, Bootstrap, Font-Awesome, JavaScript, jQuery for user interface</a><ul class="simple">
 </ul>
 </li>
@@ -97,7 +97,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="">Project structure</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#assets">Assets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#client">Client</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#db">db</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="#db">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#system">System</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -211,9 +212,15 @@
 <p>This is the database logic. It contains scripts for database
 authentication and connection creation as well as those for
 inserting, fetching and updating items on the database.</p>
-<p>Edit the <em>db_con (db_auth/db_con.php)</em> file to reflect your local
-environment</p>
+<p>Edit the <em>db_con (db_auth/db_con.php)</em> file to reflect your local environment.</p>
 <p>The projects landing page is index.php which is located at its root.</p>
+</div>
+<div class="section" id="system">
+<h2>System<a class="headerlink" href="#system" title="Permalink to this headline">¶</a></h2>
+<p>This is the system environment variables. It contains parameters that need to be set for the system to run once deployed.</p>
+<p>They include the database authentication and connection creation.</p>
+<p>Edit the config (config.php) file to reflect your local environment.</p>
+<p>The projects landing page is index.php which is located at its root. It is the login page.</p>
 <div class="toctree-wrapper compound">
 <ul class="simple">
 </ul>

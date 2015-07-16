@@ -22,10 +22,21 @@ This is the database logic. It contains scripts for database
 authentication and connection creation as well as those for
 inserting, fetching and updating items on the database.
 
-Edit the *db_con (db_auth/db_con.php)* file to reflect your local
-environment
+Edit the *db_con (db_auth/db_con.php)* file to reflect your local environment.
 
 The projects landing page is index.php which is located at its root.
+
+System
+-------
+
+This is the system environment variables. It contains parameters that need to be set for the system to run once deployed.
+
+They include the database authentication and connection creation.
+
+Edit the config (config.php) file to reflect your local environment.
+
+The projects landing page is index.php which is located at its root. It is the login page.
+
 
 
 

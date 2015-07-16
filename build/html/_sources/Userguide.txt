@@ -126,16 +126,89 @@ Users
 
 Here, the admin can create and manage different types of users.
 
+* Go to the users tab at the leftside bar of the app.
+
+* Click on 'create' to create a new user. Fill in details in the form that appears on the page and save.
+
+
+.. figure:: images/users.png
+
+
+* You can also add a new user from DHIS2 by clicking on 'add form DHIS2' in the dropdown list.
+
+* To edit the roles of a user, click on the 'edit' in the dropdown. In the window that appears, click on edit at the each user in order to edit.
+
+
+.. figure:: images/edit.png
+
+
+* You can also click on the 'administration' to deactivate an account or update the details of a user.
+
+
+.. figure:: images/admini.png
+
     
 Programs
 +++++++++++++
 
 Here, you can create and manage programs.
 
+#. Click on the programs tab on the leftside bar, on the dropdown that appears, click on the 'create' to create a new program. 
+
+#. On the window that appears, fill in the details of the program you want to create i.e the program name and the datasets for the program.
+
+
+.. figure:: images/create.png
+
+You can also click on the 'edit' in the dropdown to change the details of a program or 'administration' to delete a certain program.
+
+
 Classify 
 +++++++++++++++++++++++
 
 Here you can classify facilities according to the hierarchy, either as sub-county stores, central stores, satellite sites or stand alone sites.
+
+#. Click on the classify tab on the leftside bar, on the dropdown that appears, select either sub-county stores,central sites, satellite sites or stand alones.
+
+#. Once you click 'sub-county stores', a new window will be loaded containing a form where you will;
+
+   * Select the program you want to classify and submit.
+
+   * Select the sub-county stores that the program will be attributed to and submit.
+
+
+.. figure:: images/subcounty.png  
+
+3. When you select the 'central site' from the dropdown;
+
+   * select the program you want to classify and submit.
+
+   * Below that, select the central store you want the program to be attributed to and then submit.
+
+
+.. figure:: images/central.png 
+
+4. When you select the 'satellite site' from the dropdown;
+
+   
+
+   * Here, you can either classify the satellite as a sub-county store satellite or a central site satellite. Just click on any of the links according to the classification you want. 
+
+For example, if you select the sub-county store satellite link,
+
+   * Select the program you want to classify and click submit.
+
+   * Below it, select the sub-county store (the parent to the satellite site) and submit.
+
+   * Below that, select the satellite sites that will have the sub-county store selected above as their parent and then submit.
+
+
+ .. figure:: images/satellites.png   
+
+The same procedure applies when you select the central site satellite link.
+
+In the dropdown, when you click on  'Stand Alones', you will just follow the same procedure for classification.
+
 
 .. Go to `Classify `_ ,click on the facility type to classify, then select the facilities to put under the classification.
 
@@ -165,11 +238,17 @@ Updates
 
 There is need to query DHIS2 for newly updated organization units, facilities and datasets.
 
-Use `Updates`_ to update the systems database from the DHIS2's web API.
+ #. click on the 'updates' link in the leftside bar of the application.
 
-Updates fetch new organization units,facilities and datasets that may have been added.
+ #. From the dropdown that appears below the link, select either counties,sub-counties, facilities or datasets inorder to update them respectively.
 
- .. _`Updates`: url here
+
+.. figure:: images/update.png  
+.. Use `Updates`_ to update the systems database from the DHIS2's web API.
+
+.. Updates fetch new organization units,facilities and datasets that may have been added.
+
+..  .. _`Updates`: url here
 
 
 
@@ -222,6 +301,9 @@ Tasks
 
 Assigning a dataset to organization units
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is done in the `DHIS2`_ test site. 
+
 
  #. In `DHIS2`_ apps, select the data sets app.
 
@@ -292,7 +374,7 @@ Entering data for satellite sites
  .. figure:: images/doubleclick.png
 
 
-Collection of aggregation data for the satellite sites
+Collection of aggregated data for the satellite sites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. In the app (Supply Pipeline Hierarchy Tool), on the leftside bar, click on the Reports tab. You will see a dropdown appear below the tab.
@@ -342,6 +424,12 @@ programs and supply chain hierarchy.
 Generating a supply hierarchy report
 ++++++++++++++++++++++++++++++++++++
 
+#. From the leftside bar of the application, click on the reports link.
+
+#. From the dropdown that appears below it, select Supply Hierarchy.
+
+#. A window will loaded displaying a program and the various site classifications. 
+ 
 .. figure:: images/supply.png
 .. :align:center
 
@@ -353,6 +441,18 @@ Generating a supply hierarchy report
 
 Generating a program report
 +++++++++++++++++++++++++++++
+
+#. From the leftside bar of the application, click on the reports link.
+
+#. From the dropdown that appears below it, select 'Program'.
+
+#. A window will be loaded showing programs and the different types of sites which the progrm is assigned to(sub-county stores, central sites, satellite sites, and stand alone sites). 
+
+You will also be able to see the various datasets that are assigned to a certain program(s).
+
+
+
+
 
 .. figure:: images/programme.png
 
@@ -428,7 +528,20 @@ Trouble shooting
 Restore of deleted data
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-One can retore deleted data by clicking on the administration link on the leftside bar of the app.
+One can retore deleted data by:
+
+#. Click on the administration link on the leftside bar of the app.
+
+#. A dropdown will appear, click on the first option i.e Supply Hierarchy inorder to delete a supply hierarchy.
+
+#. Click on the second option inorder to restore deleted data.
+
+A window will be loaded showing all the deleted data.
+
+#. If you want to retrieve the data, click on the restore button at the end of the specific row.
+
+#. If you want to delete permanently, click on the 'delete permanently' button at the end of the row.
+
 
 .. figure:: images/restore.png
 
