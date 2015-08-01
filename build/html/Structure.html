@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="Supply Chain 0.1 documentation" href="index.html"/>
-        <link rel="next" title="User guide" href="Userguide.html"/>
+        <link rel="next" title="Approach" href="Deployment.html"/>
         <link rel="prev" title="Development tools" href="03_development.html"/> 
 
   
@@ -95,10 +95,17 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Project structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#api">api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#assets">Assets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#client">Client</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#db">db</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#system">System</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Deployment.html">Approach</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Deployment.html#the-web-api-and-the-database">The web API and the database</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -134,7 +141,7 @@
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#assigning-a-dataset-to-organization-units">Assigning a dataset to organization units</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#accessing-the-data-entry-form">Accessing the data entry form</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#entering-data-for-satellite-sites">Entering data for satellite sites</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Userguide.html#collection-of-aggregation-data-for-the-satellite-sites">Collection of aggregation data for the satellite sites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Userguide.html#collection-of-aggregated-data-for-the-satellite-sites">Collection of aggregated data for the satellite sites</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Userguide.html#update-of-central-site-data">Update of central site data</a></li>
 </ul>
 </li>
@@ -195,8 +202,13 @@
             
   <div class="section" id="project-structure">
 <h1>Project structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h1>
-<p>The project contains three parts: assets, client, db.</p>
+<p>The project contains three parts: api, assets, client, db.</p>
 <p>Each part forms an important part of this project.</p>
+<div class="section" id="api">
+<h2>api<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<p>These are PHP5_CURL scripts that interact with the DHIS2 API.
+Data querying from DHIS2 API and some level of processing is done here.</p>
+</div>
 <div class="section" id="assets">
 <h2>Assets<a class="headerlink" href="#assets" title="Permalink to this headline">¶</a></h2>
 <p>These are the resources needed in this project.</p>
@@ -209,11 +221,7 @@
 </div>
 <div class="section" id="db">
 <h2>db<a class="headerlink" href="#db" title="Permalink to this headline">¶</a></h2>
-<p>This is the database logic. It contains scripts for database
-authentication and connection creation as well as those for
-inserting, fetching and updating items on the database.</p>
-<p>Edit the <em>db_con (db_auth/db_con.php)</em> file to reflect your local environment.</p>
-<p>The projects landing page is index.php which is located at its root.</p>
+<p>This is the database logic. It contains scripts for database authentication and connection creation as well as those for inserting, fetching and updating items on the database.</p>
 </div>
 <div class="section" id="system">
 <h2>System<a class="headerlink" href="#system" title="Permalink to this headline">¶</a></h2>
@@ -234,7 +242,7 @@ inserting, fetching and updating items on the database.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Userguide.html" class="btn btn-neutral float-right" title="User guide" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Deployment.html" class="btn btn-neutral float-right" title="Approach" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="03_development.html" class="btn btn-neutral" title="Development tools" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

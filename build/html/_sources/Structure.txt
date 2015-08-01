@@ -1,8 +1,15 @@
 Project structure
 =========================
-The project contains three parts: assets, client, db.
+The project contains three parts: api, assets, client, db.
 
 Each part forms an important part of this project.
+
+api
+----
+
+These are PHP5_CURL scripts that interact with the DHIS2 API.
+Data querying from DHIS2 API and some level of processing is done here.
+
 
 Assets
 ------
@@ -18,13 +25,7 @@ It contains scripts that will display on the browser.
 
 db
 --
-This is the database logic. It contains scripts for database
-authentication and connection creation as well as those for
-inserting, fetching and updating items on the database.
-
-Edit the *db_con (db_auth/db_con.php)* file to reflect your local environment.
-
-The projects landing page is index.php which is located at its root.
+This is the database logic. It contains scripts for database authentication and connection creation as well as those for inserting, fetching and updating items on the database.
 
 System
 -------

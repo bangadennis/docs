@@ -412,6 +412,65 @@ Update of central site data
 
 
 
+Sites Analytics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This functionality is basically for displaying the list of facilities by program and by type. 
+
+#. Inorder to access this functionality;
+
+#. Go to the Reports link on the leftside bar of the application and click on it.
+
+#. In the dropdown that appears, select the Sites Analytics option. A new window will be loaded.
+
+#. In the form that appears on the page, select the program that you want to get the report on. For example, NASCOP- ART.
+
+#. Select the type of report you want to get, for example, list of ordering points, distribution of ordering points by county, list of service points.
+
+#. Select the Report Organization Unit to report on.
+
+#. click on the get report button at the bottom of the form.
+
+.. figure:: images/sites.png
+
+
+
+This will load for you the report which you want according to the detils you entered in the form.
+
+.. figure:: images/siter.png
+
+
+
+Getting ART Reports
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This functionality is for getting all types of reports that are limited to ART program in DHIS2.
+
+In order to access this;
+
+
+#. Go to Reports link on the leftside bar of the application and click on it.
+
+#. In the dropdown that appears, select ART Reports.
+
+#. A new window will be loaded, fill in the details in the form that appears.
+
+#. In the form, Select the type of report that you want to get.
+
+#. Select the period for reporting(monthly) and then select the organization unit.
+
+#. Then click on the Get report button at the bottom.
+
+
+.. figure:: images/art.png
+
+
+This will load for you the report according to the details which you entered in the form. 
+
+
+.. figure:: images/artr.png
+
+
 Other procedures
 ----------------
 
