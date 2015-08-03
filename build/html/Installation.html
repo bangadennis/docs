@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; Supply Chain 0.1 documentation</title>
+  <title>Installation Process &mdash; Supply Chain 0.1 documentation</title>
   
 
   
@@ -31,7 +30,8 @@
   
 
   
-    <link rel="top" title="Supply Chain 0.1 documentation" href="index.html"/> 
+    <link rel="top" title="Supply Chain 0.1 documentation" href="index.html"/>
+        <link rel="prev" title="User guide" href="Userguide.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -70,7 +70,7 @@
         
           
           
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Overview.html#facility-types">Facility types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Overview.html#the-reporting-hierachy">The reporting hierachy</a><ul class="simple">
@@ -162,10 +162,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation Process</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Installation.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Installation.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Installation.html#setup-and-configuration">Setup and Configuration</a><ul class="simple">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Installation Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-and-configuration">Setup and Configuration</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -196,9 +196,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Installation Process</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/Installation.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -207,16 +209,70 @@
 </div>
           <div role="main" class="document">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="installation-process">
+<h1>Installation Process<a class="headerlink" href="#installation-process" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Linux-Ubuntu server is the preferred development and deployment environment for this application.</p>
+<p>The Dependencies-Development and Production environment required are:</p>
+<ol class="arabic simple">
+<li>Git- This is a distributed revision control system.</li>
+<li>MySQL  database(&gt;5.5), apache server and php(&gt;=5.3)-LAMP.</li>
+<li>php-curl.</li>
+<li>crontab.</li>
+</ol>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Install all the depencies i.e the ones listed above in your machine.</li>
+<li>Clone the application from the github repository to your document root in your machine/Or Copy the application folder into your document root.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please note that you must have an account on Github in order to do this.</p>
+</div>
+</div>
+<div class="section" id="setup-and-configuration">
+<h2>Setup and Configuration<a class="headerlink" href="#setup-and-configuration" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create a mysql database from your localhost and dump the database schema  into it.( Database Schema is in  the application’s root folder).</li>
+<li>In the <em>config.php</em> file (application_name/system) change the configurations for:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>MySQL Database name.</li>
+<li>MySQL user and the MySQL password.</li>
+<li>Base path for your application.</li>
+<li>DHIS2 url</li>
+<li>DHIS2 access username and password for api interaction.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Setup a cronjob to download data elements from DHIS2.(Executes hourly).</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>api/download_dataElements.php</li>
+</ul>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
 </div>
 
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Userguide.html" class="btn btn-neutral" title="User guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

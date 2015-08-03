@@ -26,7 +26,7 @@ Table of contents
     Structure
     Deployment
     Userguide
-    
+    Installation
 
 .. toctree::
     :maxdepth: 2
