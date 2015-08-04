@@ -22,11 +22,9 @@ Table of contents
 
     Overview
     Approach
-    03_development
     Structure
-    Deployment
     Userguide
-    Installation
+   
 
 .. toctree::
     :maxdepth: 2
