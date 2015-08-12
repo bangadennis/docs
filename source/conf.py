@@ -34,6 +34,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
+    'rst2pdf.pdfbuilder',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -364,3 +365,10 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
+
+pdf_documents = [('index', u'Supply_Chain_Hierarchy_Tool_UserGuide', u'Supply Chain Hierarchy Tool(User Guide)', u'UoN'),]
+   
+   # index - master document
+   # rst2pdf - name of the generated pdf
+   # Sample rst2pdf doc - title of the pdf
+   # Your Name - author name in the pdf
